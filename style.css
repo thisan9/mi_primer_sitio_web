@@ -1,0 +1,772 @@
+/* ======================================================================
+   ESTILOS GENERALES Y PORTADA - NEXUSPLAY GAMING
+   ====================================================================== */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e2e8f0;
+    background-color: #090d16;
+    line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------
+   BARRA SUPERIOR DE CONTACTO
+   -------------------------------------------------------------------- */
+.top-bar {
+    background-color: #05070b;
+    color: #94a3b8;
+    font-size: 0.82rem;
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.top-bar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-contacts {
+    display: flex;
+    gap: 2rem;
+}
+
+.top-item.whatsapp {
+    color: #ec4899;
+}
+
+/* ======================================================================
+   BARRA DE NAVEGACIÓN RESPONSIVA
+   ====================================================================== */
+.navbar {
+    background-color: #0f172a;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.8rem 1.5rem;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo-img {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #ec4899;
+}
+
+.btn-nav-login {
+    background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: opacity 0.2s;
+}
+
+.btn-nav-login:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0.6rem 1rem;
+    }
+    .nav-container {
+        justify-content: center;
+    }
+    .nav-links {
+        gap: 1rem;
+        justify-content: center;
+    }
+}
+
+/* --------------------------------------------------------------------
+   SECCIÓN HERO (DOS COLUMNAS CON COLLAGE)
+   -------------------------------------------------------------------- */
+.hero-section {
+    background: linear-gradient(135deg, #090d16 0%, #1e1b4b 100%);
+    color: white;
+    padding: 5rem 2rem;
+    overflow: hidden;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.hero-tag {
+    display: inline-block;
+    background-color: rgba(139, 92, 246, 0.2);
+    border: 1px solid rgba(139, 92, 246, 0.4);
+    color: #c084fc;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text-side h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.hero-text-side p {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.hero-cta-box {
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    padding: 1.8rem;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+}
+
+.btn-orange {
+    display: inline-block;
+    background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 1.2rem;
+}
+
+.btn-orange:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(236, 72, 153, 0.6);
+}
+
+.hero-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+/* Estilos del Collage de Imágenes */
+.image-collage {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.collage-main img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.collage-sub {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.collage-sub img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.hero-title-custom {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-desc-custom {
+    color: #94a3b8;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-subtitle-custom {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #c084fc;
+    margin-bottom: 0.8rem;
+}
+
+.hero-benefits-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Tarjeta del Formulario */
+.cbtis-hero-form-card {
+    background-color: #0f172a;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    padding: 2.2rem;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.form-card-title {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form-group-margin {
+    margin-bottom: 1rem;
+}
+
+.form-control-input, 
+.form-control-select, 
+.form-control-date, 
+.form-control-textarea {
+    width: 100%;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.form-control-select {
+    color: #cbd5e1;
+}
+
+.form-date-label {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.form-control-date {
+    color: #ffffff;
+}
+
+.form-control-textarea {
+    font-family: inherit;
+}
+
+.form-group-checkbox {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.form-checkbox-input {
+    width: 18px !important;
+    height: 18px !important;
+    min-width: 18px;
+    cursor: pointer;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.form-checkbox-label {
+    font-size: 0.78rem !important;
+    color: #94a3b8 !important;
+    line-height: 1.35 !important;
+    cursor: pointer;
+    display: inline-block !important;
+    width: auto !important;
+    flex: 1;
+}
+
+.form-submit-btn {
+    background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.form-submit-btn:hover {
+    opacity: 0.9;
+}
+
+.cbtis-hero-form-card input:focus, 
+.cbtis-hero-form-card select:focus, 
+.cbtis-hero-form-card textarea:focus {
+    border-color: #8b5cf6 !important;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.25);
+}
+
+/* ======================================================================
+   ESTILOS DE CATÁLOGO / GÉNEROS
+   ====================================================================== */
+.careers-section {
+    padding: 5rem 2rem;
+    background-color: #0b101b;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.section-header p {
+    color: #94a3b8;
+    font-size: 1.05rem;
+}
+
+.careers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.career-card {
+    background-color: #0f172a;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(139, 92, 246, 0.15);
+    border-color: #8b5cf6;
+}
+
+.career-img-container {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+
+.career-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.career-card:hover .career-img-container img {
+    transform: scale(1.05);
+}
+
+.career-content {
+    padding: 1.8rem;
+}
+
+.career-content h3 {
+    font-size: 1.15rem;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.career-content p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* ======================================================================
+   ESTILOS DE LA SECCIÓN MULTIMEDIA (VIDEO Y MAPA OSCURO)
+   ====================================================================== */
+.multimedia-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.multimedia-card {
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.multimedia-card h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+    .multimedia-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ======================================================================
+   ESTILOS Y RECORRIDO DE STREAMERS
+   ====================================================================== */
+.teachers-section {
+    background: linear-gradient(135deg, #090d16 0%, #1e1b4b 100%);
+    color: white;
+    padding: 4rem 1.5rem;
+}
+
+.teachers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.teachers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.teachers-header h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-top: 0.3rem;
+    color: #ffffff;
+}
+
+.teachers-header p {
+    color: #94a3b8;
+    font-size: 1rem;
+    max-width: 700px;
+    margin-top: 0.5rem;
+}
+
+.teachers-tag {
+    color: #c084fc;
+    font-weight: bold;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.teachers-nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.nav-btn:hover {
+    background-color: #8b5cf6;
+    border-color: #8b5cf6;
+    transform: scale(1.05);
+}
+
+.teachers-grid {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 1rem;
+    scrollbar-width: none;
+}
+
+.teachers-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.teacher-card {
+    min-width: 280px;
+    flex: 0 0 280px;
+    background-color: #0f172a;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.teacher-card:hover {
+    transform: translateY(-5px);
+    border-color: #8b5cf6;
+}
+
+.teacher-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.teacher-info {
+    padding: 1.5rem;
+}
+
+.teacher-info h3 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+}
+
+.teacher-info p {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    line-height: 1.4;
+}
+
+/* ======================================================================
+   ESTILOS DE CONVENIOS (MARQUESINAS INFINITAS)
+   ====================================================================== */
+.convenios-section {
+    padding: 5rem 0;
+    background-color: #0b101b;
+    overflow: hidden;
+}
+
+.convenience-tag-custom {
+    text-align: center;
+}
+
+.marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.marquee-wrapper-spacing {
+    margin-top: 1.5rem;
+}
+
+.marquee-track {
+    display: flex;
+    gap: 1.5rem;
+    width: max-content;
+}
+
+.marquee-track-top {
+    animation: scrollLeft 35s linear infinite;
+}
+
+.marquee-track-bottom {
+    animation: scrollRight 35s linear infinite;
+}
+
+.convenio-card {
+    background-color: #0f172a;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #e2e8f0;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+@keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+/* ======================================================================
+   ESTILOS DEL PIE DE PÁGINA (FOOTER)
+   ====================================================================== */
+.footer {
+    background-color: #05070b;
+    color: #94a3b8;
+    padding: 2.5rem 2rem;
+    border-top: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer-info p {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    margin-bottom: 0.3rem;
+}
+
+.footer-author {
+    font-size: 0.82rem;
+    color: #64748b;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 38px;
+    height: 38px;
+    background: rgba(139, 92, 246, 0.1);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: background 0.2s, transform 0.2s, border-color 0.2s;
+}
+
+.social-icon:hover {
+    background: #8b5cf6;
+    border-color: #8b5cf6;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-socials {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .teachers-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .hero-text-side h1 {
+        font-size: 2.2rem;
+    }
+}
